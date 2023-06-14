@@ -30,6 +30,18 @@
   .skill-inner{
     padding: 0 0;
   }
+  .abtcontent h2{
+    font-size: 18px;
+  }
+  .abtcontent p{
+    font-size: 16px;
+  }
+  .abtcontent p span{
+    font-size: 16px;
+  }
+  .nav-branding {
+    font-size: 26px;
+    }
 }
 @media(max-width:900px) {
   .hamburger {
