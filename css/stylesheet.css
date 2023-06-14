@@ -22,8 +22,7 @@
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between;
-    margin-right: -15px;
-    margin-left: -15px;
+  
 }
 .row>*{
     width:100%;
@@ -79,13 +78,19 @@
     color: var(--sec-color);
 }
 .bot{
-    width: 100%;
-    border: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 /*======Header Section=======*/
 
 .headsection{
     background-color: #fff;
+}
+.nav-section{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
 }
 .header{
 	background:white;
@@ -108,6 +113,7 @@ a{
     justify-content: space-between;
     align-items: center;
         }
+
 .nav-menu {
     display: flex;
 	justify-content: flex-end;
@@ -115,16 +121,18 @@ a{
     gap: 60px;
         }
 .nav-branding {
-    font-size: 35px;
+    font-size: 36px;
 	color:rgba(0, 0, 0, 0.76);
 	font-weight: 600;
+    font-family: var(--pri-font);
         }
 .nav-link {
     transition: 0.7s ease;
-	font-size:17px;
+	font-size:16px;
+    font-family: var(--pri-font);
         }
 .nav-link:hover {
-    color:#43cfd7;
+    color:var(--sec-color);
         }
 .hamburger {
     display: none;
@@ -138,37 +146,12 @@ a{
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background:black;
-        }
-       
-/* .headcontent{
-    padding: 20px;
 }
-.menubar{ 
-    display:flex;
-    justify-content:space-between;
-    }
-.menubar .nav-link a{ 
-    display:block;
-    text-decoration:none;
-    color:#635551;
-    padding: 15px 10px;
-    font-size:16px;
-    font-weight: 500;
-    font-family:var(--pri-font);
-
-    }
-ul{
-     list-style-type: none;
-		}
-.nav-link a:hover{ 
-    color:var(--sec-color);
-    }
-.nav-link a.active{ 
-    color:var(--sec-color);
-    } */
-/*======banner Section=======*/
-
-.bannersection{
+.banner-section{
+    padding-top: 80px;
+    border-bottom: 1px solid var(--border-color);
+}    
+.home-section{
 	color:white;
 	width:100%;
 }
@@ -247,12 +230,13 @@ ul{
 }
 .abtcontent h2{
     font-size: 44px;
+    font-family: var(--pri-font);
 }
 .abtcontent p{
     font-size: 22px;
     color: var(--pri-color);
 	line-height:1.5;
-
+    font-family: var(--pri-font);
 }
 
 .abtcontentt{
@@ -260,6 +244,7 @@ ul{
 }
 .abtcontent p{
     padding: 10px 0;
+
 }
 .abtcontent p span{
     color: var(--sec-color);
@@ -393,14 +378,22 @@ h2 a{
     padding: 20px 0px;
   
 }
-
+.htmlhead{
+    font-size: 24px;
+    padding: 20px;
+    font-family: var(--pri-font);
+}
+.htmlhead h4{
+    text-decoration: underline;
+}
 .projectcontent{
     box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
     background:linear-gradient(145deg, #e2e8ec, #ffffff);
-    height:250px;
+    height:320px;
     border-radius: 10px;
     text-align: center;
     margin: 40px 15px;
+    transition: 0.8s all ease;
 }
 .projectcontent1{
     background-image: url('../image/flexor.jpg');
@@ -440,11 +433,12 @@ h2 a{
 }
 
 .projectcontent .icon h3{
-    font-size: 22px;
+    font-size: 20px;
     color:var(--pri-color);
     padding-top: 50px;
     font-family: var(--sec-font);
     opacity: 0;
+    transition: 0.5s all ease;
 }
 .projectcontent:hover h3{
     opacity: 1;
@@ -461,13 +455,27 @@ h2 a{
 }
 .projectcontent:hover{
     background:linear-gradient(145deg, #6a67ce,#fc636b);
-    transition: 0.5s all ease;
+    transition: 0.6s all ease;
 }
 .projectcontent:hover iconify-icon{
     opacity: 1;
     color:var(--pri-color);
     visibility: visible;
     transition: 0.5s all ease;
+}
+.html{
+    border-bottom: 1px solid var(--border-color);
+}
+.javascript{
+    border-bottom: 1px solid var(--border-color);
+}
+.javascripthead{
+    font-size: 24px;
+    padding: 20px;
+    font-family: var(--pri-font);
+}
+.javascripthead h4{
+    text-decoration: underline;
 }
 /*===========Contact==========*/
 .contactsection{
